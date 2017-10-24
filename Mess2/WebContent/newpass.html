@@ -1,0 +1,93 @@
+
+<html>
+    <head>
+        <title>Mess Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .footer-style1
+               {
+                 width: 1310px;
+                  height: 30px;
+                 border: 1px solid #800000;
+                 background:red;
+                color:white;
+               }
+            .login
+           {
+              margin-top: 45px;
+              margin-bottom: 45px;
+              height:280px;
+              width:470px;
+              margin-left: 404px;             
+              border:2px #aaa solid;
+              padding:10px;
+              
+              background-color:#800000;
+           }
+            input
+            {
+              background: #E1FFE1;
+              border:1px #CCC solid;
+               padding:5px;
+            }  
+   h1
+{
+       position:absolute;
+       top:50px;
+       center:0;
+       width:100%;
+       color:#800000;
+}
+  
+        </style>
+        <script type="text/javascript">
+            function check()
+            {
+                var x=document.getElementById('upass').value;
+                var y=document.getElementById('cpass').value;
+                if(x==y)
+                {
+                    return true; 
+                }
+                else
+                {
+                     alert( "Password And Confirm Password doesnt match...Enter Properly!!!" );
+                     return false;
+   
+                }
+                
+            }
+        </script>
+    </head>
+    <body style="margin:0;background-color:#DEB887">
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2"><img src="12.JPG"alt="" width="219px" height="205px" ></td></div><div class="image">
+                    <td colspan="3" ><img src="24.jpg"alt="" width="1100px" height="205px"/> </td><h1><center>WELCOME TO MESS MANAGEMENT PORTAL</center></h1> </div> 
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table align="center" style="width:1425px; height:550px; background-color:white">
+              <form action="newpassServlet" method="post" onsubmit="return check()">  
+                <div align="center"  class="login">
+                    <h3><strong>Reset Password</strong></h3>
+                 New Password: <input type="password" placeholder="NewPassword" id="upass" name="upass" style="width:270px"><br/><br/><br/> 
+                <br/> Confirm Password: <input type="password" placeholder="ConfirmPassword" id="cpass" name="cpass" style="width:270px"><br/><br/><br/>
+               <input type="submit" value="Reset password"><br/><br/><br/><br/>
+                </div>
+            </form>    
+            </table>
+            
+        </div>
+        <div>
+            <table>
+             <tr class="footer-style1">
+                 <td colspan="5" valign="top" align="center"style="width:1342px;" ><strong> Copyright &copy; Mess Management Portal-2017  </strong><em><sub>All rights reserved.</sub></em></td>
+            </tr>
+            </table>
+        </div>
+    </body>
+</html>
